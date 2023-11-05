@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../../static/daily/style.css"> -->
+    <link rel="stylesheet" href="../../static/daily/style.css">
+    <title>daily</title>
+    <link rel="icon" type="image/png" href="./media/favicon.png">
+</head>
+<body>
+    
+
+    <section class="menuBarContainer">
+        <section class="col">
+            <h1>daily</h1>
+        </section>
+
+        <section class="co2">
+            <ul id="menuList">
+                <li><a href="{% url 'data' %}">DATA</a></li>
+                <li><a href="{% url 'calendar' %}">CALENDAR</a></li>
+                <li><a href="{% url 'index' %}">TODAY</a></li>
+            </ul>            
+        </section>
+
+    </section>
+
+    {% block body %}
+    {% endblock %}
+
+
+
+
+</body>
+</html>
